@@ -5,7 +5,8 @@
 >- jednego Docker-compose<br> 
 >- dodatkowych plików niezbędnych do poprawnej pracy każdej usługi cząstkowej.<br> 
 
-Port: **6080** <br>
+Strona dostępna pod adresem: **localhost:6080** <br>
+
 ### Uruchomienie 
 Folder Compose umiescic w ./home/<br> 
 Dla uruchomienia usługi :
