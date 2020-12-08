@@ -1,0 +1,33 @@
+version: '3.7'
+networks:
+  frontend:
+    driver: "bridge"
+  backend:
+    driver: "bridge"
+services:
+    http_server:
+        container_name: http_server
+        build:
+            context: ./httpd
+        ports:
+            - 6080:80
+        networks:
+            - frontend
+            - backend
+    php:
+        container_name: php
+        build:
+            context: ./php
+        working_dir: /srv/my_php_page
+        networks:
+            - backend
+    mysql_db:
+        container_name: mysql_db
+        build:
+            context: ./mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=my_pass    
+        volumes:
+            - ./mysql_db:/var/lib/mysql
+        networks:
+            - backend
