@@ -26,7 +26,7 @@ Hasło dla uzytkownika root jest ustawione w pliku Docker-compose.MySQL, kontene
 Dane są przechowywane w podłączonym volumenie, aby były dostępne po wyłączeniu kontenera.<br>
 #### httpd
 Plik config został zmieniony dla zapewnienia możliwości użycia dyrektyw proxymatch oraz vhost <br>
-Dyrektywa ProxyPassMatch zapełnia prawidłowe proxowanie.<br>
+Dyrektywa ProxyPassMatch zapewnia prawidłowe proxowanie.<br>
 Kontener jest podłączony do do sieci frontend i backend, laczy sie z proxy PHP za pomoca aliasu<br>
 Dodatkowe pliki konfiguracyjne: httpd.conf oraz httpd-vhosts.conf <br>
 
