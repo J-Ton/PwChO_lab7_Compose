@@ -35,3 +35,12 @@ Dodatkowe pliki konfiguracyjne: httpd.conf oraz httpd-vhosts.conf <br>
 ### Wyniki
 Aby sprawdzić poprawność działania naszych kontenerów prechodzimy pod adres **localhost:6080** <br>
 ![wynik](/wynik.png)
+
+### Reprezentacja   graficzna
+Aby wygenerować reprezentację graficzną pliku docker-compose skorzystamy z narzędzia docker-compose-viz <br>
+Polecenie:
+```
+docker run --rm -it --name dcv -v /home/student/Compose:/input pmsipilot/docker-compose-viz render -m image --force docker-compose.yml --output-file=topology.png 
+
+```
+![topology](/topology.png)
